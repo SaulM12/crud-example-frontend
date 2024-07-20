@@ -1,27 +1,30 @@
-# FrontendCrud
+# Frontend CRUD con Angular 18
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 18.1.0.
 
-## Development server
+## Descripción del Proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este frontend forma parte de un proyecto completo de CRUD que utiliza un backend en Spring Boot y una base de datos PostgreSQL. En el frontend, aprovechamos las nuevas características de Angular 18 junto con PrimeNG para crear una interfaz de usuario. Utilizamos PrimeFlex para simplificar el diseño sin necesidad de escribir CSS personalizado.
 
-## Code scaffolding
+## Servidor de Desarrollo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecuta `ng serve` para iniciar un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias cualquiera de los archivos fuente.
 
-## Build
+## Generación de Código
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecuta `ng generate component component-name` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Ayuda Adicional
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para obtener más ayuda sobre Angular CLI, usa `ng help` o visita la [Visión General y Referencia de Comandos de Angular CLI](https://angular.dev/tools/cli).
 
-## Further help
+## Recursos Adicionales
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Repositorio Backend](https://github.com/SaulM12/crud-example-backend.git)
+
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request con tus cambios.
