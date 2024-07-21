@@ -1,38 +1,39 @@
 <div class="flex flex-column gap-2">
-    <a routerLink="book-form/new" class="p-button font-bold w-max">
-        Crear nuevo libro
-    </a>
-   <div class="flex gap-4 flex-wrap">
+  <a routerLink="book-form/new" class="p-button font-bold w-max">
+    Crear nuevo libro
+  </a>
+  <div class="flex gap-4 flex-wrap">
     @for (book of books; track book.id) {
-        <p-card header="{{book.title}}" subheader="{{book.author}}" [style]="{ width: '360px' }">
-            <ng-template pTemplate="header">
-                @if ($index === 0) {
-                    <img class="w-full img" height="220px" alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
-                }
-                @if ($index === 1) {
-                    <img class="w-full img" height="220px" alt="Card" src="https://qph.cf2.quoracdn.net/main-qimg-bab5049dbfca5eb29fce959718bdc21c-lq" />
-                }
-                @if ($index === 2) {
-                    <img class="w-full img" height="220px" alt="Card" src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4842-9523-6" />
-                }
-            </ng-template>
-            <p>
-                Páginas: {{book.pages}}
-            </p>
-            <p>
-                Precio: {{book.price}}$
-            </p>
-            <ng-template pTemplate="footer">
-                <div class="flex gap-1 mt-1">
-                    <p-button (onClick)="deleteBook(book.id)" label="Borrar" severity="secondary" />
-                    <a routerLink="book-form/{{book.id}}" class="p-button font-bold">
-                        Editar
-                    </a>
-                </div>
-            </ng-template>
-        </p-card>
-        }@empty {
-            <p>No existen libros</p>
-        }
-   </div>
+    <p-card
+      header="{{ book.title }}"
+      subheader="{{ book.author }}"
+      [style]="{ width: '360px' }"
+    >
+      <ng-template pTemplate="header">
+        <img
+          class="w-full img"
+          height="220px"
+          alt="Card"
+          src="https://primefaces.org/cdn/primeng/images/card-ng.jpg"
+        />
+      </ng-template>
+      <p>Páginas: {{ book.pages }}</p>
+      <p>Precio: {{ book.price }}$</p>
+      <ng-template pTemplate="footer">
+        <div class="flex gap-1 mt-1">
+          <p-button
+            (onClick)="deleteBook(book.id)"
+            label="Borrar"
+            severity="secondary"
+          />
+          <a routerLink="book-form/{{ book.id }}" class="p-button font-bold">
+            Editar
+          </a>
+        </div>
+      </ng-template>
+    </p-card>
+    }@empty {
+    <p>No existen libros</p>
+    }
+  </div>
 </div>
