@@ -14,7 +14,7 @@
           class="w-full img"
           height="220px"
           alt="Card"
-          src="https://primefaces.org/cdn/primeng/images/card-ng.jpg"
+          [src]="book.image?book.image.imageUrl:'/assets/defecto.png'"
         />
       </ng-template>
       <p>Páginas: {{ book.pages }}</p>
